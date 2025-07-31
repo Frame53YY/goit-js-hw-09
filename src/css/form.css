@@ -24,16 +24,29 @@
   border: 1px solid #808080;
   border-radius: 4px;
   height: 40px;
+  font-size: 19px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 8px 16px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border: 1px solid #000;
+  outline: none;
 }
 
 .feedback-form textarea {
   min-height: 80px;
   max-height: 300px;
-  resize: vertical; /* позволяет юзеру менять размер вручную */
-  overflow-y: auto; /* появится скролл если текста больше max-height */
+  resize: vertical;
+  overflow: hidden;
 }
 
-button {
+.feedback-form button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -44,4 +57,14 @@ button {
   padding: 8px 16px;
   height: 40px;
   background-color: #4e75ff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feedback-form button:hover,
+.feedback-form button:focus {
+  background-color: #6c8cff;
+}
+
+input::placeholder {
+  margin: 12px;
 }
