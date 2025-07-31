@@ -1,0 +1,47 @@
+.feedback-form {
+  justify-self: center;
+  text-align: left;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 360px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.feedback-form label:last-of-type {
+  margin-bottom: 16px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  height: 40px;
+}
+
+.feedback-form textarea {
+  min-height: 80px;
+  max-height: 300px;
+  resize: vertical; /* позволяет юзеру менять размер вручную */
+  overflow-y: auto; /* появится скролл если текста больше max-height */
+}
+
+button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 16px;
+  height: 40px;
+  background-color: #4e75ff;
+}
